@@ -1,10 +1,13 @@
 
 import './App.less';
-
+import { BrowserRouter } from "react-router-dom";
+import UseRoute from './router/useRouter';
 function App() {
   return (
     <div className="App">
-      测试
+      <BrowserRouter>
+        <UseRoute />
+      </BrowserRouter>
     </div>
   );
 }
